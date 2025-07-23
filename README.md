@@ -65,17 +65,17 @@ sceneshield-ai/
 ## 📈 Architecture Flow (Mermaid)
 
 ```mermaid
+```mermaid
 graph TD
-A[User Plays Video] --> B[SceneShield AI Listens to Audio (Whisper)]
+A[User Plays Video] --> B[SceneShield Listens to Audio (Whisper)]
 A --> C[SceneShield Captures Frames (NSFW Classifier)]
 B --> D[Profanity and Tone Detection]
-C --> E[Nudity or Violence Detection]
+C --> E[Nudity and Violence Detection]
 D --> F[Scene Risk Scoring Engine]
 E --> F
 F --> G{Risk > Threshold?}
 G -->|Yes| H[Send Alert / Mute / Blur]
 G -->|No| I[Continue Playback]
-```
 ```
 
 ---
