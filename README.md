@@ -66,15 +66,17 @@ sceneshield-ai/
 
 ```mermaid
 graph TD
-A[User Plays Video] --> B[SceneShield Listens to Audio (Whisper)]
-A --> C[SceneShield Captures Frames (NSFW Classifier)]
+A[User Plays Video] --> B[SceneShield Listens to Audio - Whisper]
+A --> C[SceneShield Captures Frames - NSFW Classifier]
 B --> D[Profanity and Tone Detection]
 C --> E[Nudity and Violence Detection]
 D --> F[Scene Risk Scoring Engine]
 E --> F
-F --> G{Risk > Threshold?}
-G -->|Yes| H[Send Alert / Mute / Blur]
+F --> G{Risk Above Threshold?}
+G -->|Yes| H[Trigger Alert - Mute or Blur]
 G -->|No| I[Continue Playback]
+```
+
 ```
 
 ---
