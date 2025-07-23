@@ -1,5 +1,8 @@
 # 🎬 SceneShield AI
 
+[![CI](https://github.com/emcdo411/sceneshield-ai/actions/workflows/build.yml/badge.svg)](https://github.com/emcdo411/sceneshield-ai/actions/workflows/build.yml)
+
+
 > "A Safer Screen Without Censorship."
 
 SceneShield AI is a smart React Native prototype designed to **detect and warn about inappropriate movie or TV scenes before they appear**. Built with AI-powered scene and audio analysis, it gives users real-time alerts for moments of violence, nudity, profanity, and more — without sacrificing adult storytelling.
