@@ -68,13 +68,13 @@ sceneshield-ai/
 graph TD
 A[User Plays Video] --> B[SceneShield AI Listens to Audio (Whisper)]
 A --> C[SceneShield Captures Frames (NSFW Classifier)]
-B --> D[Profanity & Tone Detection]
-C --> E[Nudity/Violence Detection]
+B --> D[Profanity and Tone Detection]
+C --> E[Nudity or Violence Detection]
 D --> F[Scene Risk Scoring Engine]
 E --> F
 F --> G{Risk > Threshold?}
-G -- Yes --> H[Send Alert / Mute / Blur]
-G -- No --> I[Continue Playback]
+G -->|Yes| H[Send Alert / Mute / Blur]
+G -->|No| I[Continue Playback]
 ```
 
 ---
@@ -136,5 +136,4 @@ This project is licensed under the **Defensive AI Commercial Rights (DACR)** Lic
 This license promotes **accountable AI development** and ensures this project cannot be used to violate civil liberties or human dignity.
 
 See the full DACR terms inside the `DACR_LICENSE/LICENSE.md` file.
-
  
