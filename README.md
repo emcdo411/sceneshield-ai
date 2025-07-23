@@ -76,6 +76,7 @@ F --> G{Risk > Threshold?}
 G -->|Yes| H[Send Alert / Mute / Blur]
 G -->|No| I[Continue Playback]
 ```
+```
 
 ---
 
