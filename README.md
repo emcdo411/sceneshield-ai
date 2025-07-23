@@ -55,7 +55,9 @@ sceneshield-ai/
 ├── tsconfig.json
 ├── tsconfig.app.json
 ├── tsconfig.node.json
-└── vite.config.ts
+├── vite.config.ts
+└── DACR_LICENSE/
+    └── LICENSE.md
 ```
 
 ---
@@ -68,7 +70,8 @@ A[User Plays Video] --> B[SceneShield AI Listens to Audio (Whisper)]
 A --> C[SceneShield Captures Frames (NSFW Classifier)]
 B --> D[Profanity & Tone Detection]
 C --> E[Nudity/Violence Detection]
-D & E --> F[Scene Risk Scoring Engine]
+D --> F[Scene Risk Scoring Engine]
+E --> F
 F --> G{Risk > Threshold?}
 G -- Yes --> H[Send Alert / Mute / Blur]
 G -- No --> I[Continue Playback]
@@ -117,4 +120,21 @@ Fork the repo, create a feature branch, and submit a PR. Feedback and collaborat
 ## 📣 Credit
 
 Prompt generated via **LoomismAppAI.com** and developed by [@emcdo411](https://github.com/emcdo411).
+
+---
+
+## 🛡 DACR LICENSE
+
+This project is licensed under the **Defensive AI Commercial Rights (DACR)** License.
+
+> The DACR License allows for broad creative use while placing ethical restrictions on misuse, including but not limited to:
+>
+> * Use for surveillance or behavioral manipulation
+> * Deployment in carceral, military, or predictive policing environments
+> * Resale as a closed-source or DRM-restricted tool
+
+This license promotes **accountable AI development** and ensures this project cannot be used to violate civil liberties or human dignity.
+
+See the full DACR terms inside the `DACR_LICENSE/LICENSE.md` file.
+
  
