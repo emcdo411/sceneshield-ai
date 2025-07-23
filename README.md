@@ -65,7 +65,6 @@ sceneshield-ai/
 ## 📈 Architecture Flow (Mermaid)
 
 ```mermaid
-```mermaid
 graph TD
 A[User Plays Video] --> B[SceneShield Listens to Audio (Whisper)]
 A --> C[SceneShield Captures Frames (NSFW Classifier)]
